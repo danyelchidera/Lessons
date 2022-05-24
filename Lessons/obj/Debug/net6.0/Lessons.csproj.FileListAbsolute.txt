@@ -1,0 +1,12 @@
+C:\Users\hp\Documents\Algo\Lessons\Lessons\bin\Debug\net6.0\Lessons.deps.json
+C:\Users\hp\Documents\Algo\Lessons\Lessons\bin\Debug\net6.0\Lessons.dll
+C:\Users\hp\Documents\Algo\Lessons\Lessons\bin\Debug\net6.0\Lessons.pdb
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\Lessons.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\Lessons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\Lessons.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\Lessons.AssemblyInfo.cs
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\Lessons.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\Lessons.dll
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\refint\Lessons.dll
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\Lessons.pdb
+C:\Users\hp\Documents\Algo\Lessons\Lessons\obj\Debug\net6.0\ref\Lessons.dll
