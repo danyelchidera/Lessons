@@ -8,11 +8,10 @@ namespace Lessons.Algorithms
 {
     public class Brackets
     {
-        public bool IsBracketsValid(string str)
+        public static bool IsBracketsValid(string str)
         {
-            Stack<char> stack = new Stack<char>();
+            System.Collections.Generic.Stack<char> stack = new System.Collections.Generic.Stack<char>();
 
-            var isValid = true;
             foreach (var i in str)
             {
                 switch (i)
@@ -68,7 +67,7 @@ namespace Lessons.Algorithms
                 }
             }
 
-            return true;
+            return stack.Count == 0;
         }
     }
 }

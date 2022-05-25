@@ -1,7 +1,9 @@
-﻿using Lessons.Delegates;
+﻿using Lessons.Algorithms;
+using Lessons.Delegates;
 using Lessons.Models;
-
+ 
 List<Employee> emp = new List<Employee>();
+Predicate<Employee> predicate = x => x.Age == 5;
 emp.Add(new Employee
 {
     Id = 1,
@@ -23,12 +25,14 @@ emp.Add(new Employee
     Age = 7
 });
 
+Console.WriteLine(emp.Find(predicate)); 
 
 
-var t = emp.MyWhereVersion(emp => emp.Id > 1);
 
-foreach(Employee e in t)
-{
-    Console.WriteLine(e.Name);
-}
+//var t = emp.MyWhereVersion(emp => emp.Id > 1);
+
+//foreach(Employee e in t)
+//{
+//    Console.WriteLine(e.Name);
+//}
 
