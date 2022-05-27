@@ -68,7 +68,7 @@
                 hash *= -1;
             }
 
-            return hash % 100;
+            return hash % entries.Length;
         }
     }
 }
