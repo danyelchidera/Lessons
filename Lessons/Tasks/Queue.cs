@@ -1,30 +1,33 @@
-public class Queue<T>
+namespace Lessons.Tasks
 {
-    private LinkedList<T> queue;
+    public class Queue<T>
+    {
+        private LinkedList<T> queue;
 
-    public Queue()
-    {
-        queue = new LinkedList<T>();
-    }
-      //kkkkk
-    public bool IsEmpty()
-    {
-        return queue.IsEmpty();
-    }
+        public Queue()
+        {
+            queue = new LinkedList<T>();
+        }
+        //kkkkk
+        public bool IsEmpty()
+        {
+            return queue.IsEmpty();
+        }
 
-    public void Enqueue(T data)
-    {
-        queue.Add(data);
-    }
+        public void Enqueue(T data)
+        {
+            queue.Add(data);
+        }
 
-    public T Dequeue()
-    {
-        return queue.RemoveFirst();
-    }
+        public T Dequeue()
+        {
+            return queue.RemoveFirst();
+        }
 
-    public int Size()
-    {
-        return queue.Size();
+        public int Size()
+        {
+            return queue.Size();
+        }
+
     }
-    
 }

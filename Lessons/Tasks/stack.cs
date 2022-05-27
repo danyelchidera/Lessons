@@ -1,41 +1,44 @@
-public class Stack<T>
+namespace Lessons.Tasks
 {
-    private LinkedList<T> stack;
-
-    public Stack()
+    public class Stack<T>
     {
-        stack = new LinkedList<T>();
-    }
+        private LinkedList<T> stack;
 
-    public T Push(T data)
-    {
-        stack.Add(data);
-        return data;
-    }
+        public Stack()
+        {
+            stack = new LinkedList<T>();
+        }
 
-    public T Pop()
-    {
-        return stack.RemoveLast();
-    }
+        public T Push(T data)
+        {
+            stack.Add(data);
+            return data;
+        }
 
-    public T peek()
-    {
-        return stack.ReturnLast();
-    }
+        public T Pop()
+        {
+            return stack.RemoveLast();
+        }
 
-    public int Size()
-    {
-        return Size();
-    }
+        public T peek()
+        {
+            return stack.ReturnLast();
+        }
 
-    public bool IsEmpty()
-    {
-        return stack.IsEmpty();
-    }
+        public int Size()
+        {
+            return Size();
+        }
 
-    public void Print()
-    {
-        stack.PrintList();
-    }
+        public bool IsEmpty()
+        {
+            return stack.IsEmpty();
+        }
 
+        public void Print()
+        {
+            stack.PrintList();
+        }
+
+    }
 }
