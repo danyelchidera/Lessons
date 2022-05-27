@@ -63,12 +63,7 @@
         public int HashFunction(T key)
         {
             var hash = key.GetHashCode();
-            if(hash < 0)
-            {
-                hash *= -1;
-            }
-
-            return hash % entries.Length;
+            return Math.Abs(hash) % entries.Length;
         }
     }
 }
