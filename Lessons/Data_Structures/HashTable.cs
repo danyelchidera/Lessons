@@ -3,6 +3,7 @@
     public class HashTable<T, U>
     {
         LinkedList<Entry>[] entries = new LinkedList<Entry>[100];
+        private int count = 0;  
         private class Entry
         {
             public T key;
@@ -58,6 +59,29 @@
             }
             var entry = new Entry { key = key, value = value };
             entries[hash].ReplaceOrAdd(entry);
+            count++;
+        }
+
+        public void Remove(T key)
+        {
+            var hash = HashFunction(key);
+            var linkedList = entries[hash];
+            if (linkedList != null)
+            {
+                var entry =  linkedList.Find(e => e.key.Equals(key));
+                if(entry != null)
+                {
+                    linkedList.Remove(entry);
+                    count--;
+                    return;
+                }
+            }
+            throw new KeyNotFoundException("Key does not exist");
+        }
+
+        public int Count()
+        {
+            return count;
         }
 
         public int HashFunction(T key)

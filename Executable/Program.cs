@@ -3,9 +3,6 @@ using Lessons.Delegates;
 using Lessons.Models;
 using Lessons.Tasks;
 
-
-
-
 //var t = new Entry { Key = 2, Value = "thr" };
 //var t2 = new Entry { Key = 3, Value = "tht" };
 //var t3 = new Entry { Key = 4, Value = "tyhee" };
@@ -22,9 +19,9 @@ hashTable.Add("hi", 6);
 hashTable.Add("hey", 9);
 hashTable["hey"] = 1;
 hashTable["hi"] = 2;
-var f = hashTable["hey"];
-
-Console.WriteLine($"{f} {hashTable["hi"]}");
+//var f = hashTable["hey"];
+hashTable.Remove("hey");
+Console.WriteLine($"{hashTable["hey"]} {hashTable["hi"]}");
 
 
 //list.ReplaceOrAdd(t);
