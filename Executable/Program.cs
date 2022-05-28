@@ -3,6 +3,17 @@ using Lessons.Delegates;
 using Lessons.Models;
 using Lessons.Tasks;
 
+int n = 2;
+
+Console.WriteLine(1 & 1);
+
+
+static string SpinWords(string sentence)
+{
+    return String.Join(' ', sentence.Split(' ').Select(x => x.Length >= 5 ? string.Concat(x.Reverse()) : x));
+}
+
+
 //var t = new Entry { Key = 2, Value = "thr" };
 //var t2 = new Entry { Key = 3, Value = "tht" };
 //var t3 = new Entry { Key = 4, Value = "tyhee" };
@@ -11,17 +22,17 @@ using Lessons.Tasks;
 
 //Lessons.Tasks.LinkedList<Entry> list = new Lessons.Tasks.LinkedList<Entry>();
 
-HashTable<string, int> hashTable = new HashTable<string, int>();
+/*HashTable<string, int> hashTable = new HashTable<string, int>();
+hashTable.Add*/
 
-
-hashTable.Add("hey", 5);
-hashTable.Add("hi", 6);
-hashTable.Add("hey", 9);
-hashTable["hey"] = 1;
-hashTable["hi"] = 2;
-//var f = hashTable["hey"];
-hashTable.Remove("hey");
-Console.WriteLine($"{hashTable["hey"]} {hashTable["hi"]}");
+//hashTable.Add("hey", 5);
+//hashTable.Add("hi", 6);
+//hashTable.Add("hey", 9);
+//hashTable["hey"] = 1;
+//hashTable["hi"] = 2;
+////var f = hashTable["hey"];
+//hashTable.Remove("hey");
+//Console.WriteLine($"{hashTable["hey"]} {hashTable["hi"]}");
 
 
 //list.ReplaceOrAdd(t);

@@ -46,7 +46,11 @@
                 val.value = value;
             }
         }
-
+        /// <summary>
+        /// Adds an item to the hashtable
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
         public void Add(T key, U value)
         {
             var hash = HashFunction(key);
