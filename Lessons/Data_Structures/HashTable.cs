@@ -9,6 +9,11 @@
             public T key;
             public U value;
 
+            public int CompareTo(object? obj)
+            {
+                throw new NotImplementedException();
+            }
+
             public override bool Equals(object? obj)
             {
                 var entry = obj as Entry;
@@ -93,5 +98,6 @@
             var hash = key.GetHashCode();
             return Math.Abs(hash) % entries.Length;
         }
+
     }
 }
